@@ -53,7 +53,6 @@ class Song
     array =name.split(/[-.]/)
     song.name =array[0] 
     song.artist_name =array[1] 
-    song.save
     song
     
     
