@@ -54,7 +54,7 @@ class Song
     song.name =array[1].split(" ").join(" ") 
     song.artist_name =array[0].split(" ").join(" ") 
     song
-    
-    
   end
+  
+  def self.
 end
