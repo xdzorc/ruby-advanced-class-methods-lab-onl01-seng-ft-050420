@@ -32,7 +32,14 @@ class Song
   
   def self.find_by_name(name)
     song =self.new
-    song =self.all.find {|x| x.name==name} ? song : false
+    # song =self.all.find {|x| x.name==name} ? song : false
+    self.all.each do |x|
+      if x.name==name
+        return x
+      else
+        false 
+      end
+    end
   end
 
 end
