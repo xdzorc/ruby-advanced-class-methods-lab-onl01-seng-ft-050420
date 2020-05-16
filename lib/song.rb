@@ -32,6 +32,6 @@ class Song
   
   def self.find_by_name(name)
     song =self.new
-    self.all.find {|x| x.name==name}
+    self.all.find {|x| x.name==name} ? song : false
 
 end
