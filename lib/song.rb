@@ -36,7 +36,7 @@ class Song
     self.all.each do |x|
       if x.name==name
         return x
-      elsif self.all.find {|x| x.name==name}==nil
+      elsif self.all.find {|y| x.name==name}==nil
         return false 
       end
     end
